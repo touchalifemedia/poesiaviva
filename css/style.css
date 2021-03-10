@@ -3959,7 +3959,7 @@ span.teaser {
 
 .social-icons i {
     text-shadow: none;
-    color: #fff;
+    color: #7e7e7e;
     padding: 12px 10px 8px 10px;
     width: 34px;
     height: 34px;
@@ -4004,7 +4004,7 @@ span.teaser {
 }
 
 .social-icons.big i:hover {
-    background: none;
+    opacity:0.8;
 }
 
 .fa-facebook {
@@ -4012,7 +4012,8 @@ span.teaser {
 }
 
 .fa-twitter {
-    background: #55aded;
+    background: #ffffff;
+    color: #000000;
 }
 
 .fa-google-plus {
@@ -4020,7 +4021,8 @@ span.teaser {
 }
 
 .fa-linkedin {
-    background: #0075ad;
+    background: #ffffff;
+    color: #000000;
 }
 
 .fa-rss {
