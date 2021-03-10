@@ -2271,7 +2271,12 @@ a.btn-border,
 input.btn-border {
     padding: 5px 30px 5px 30px;
 }
-
+#mainmenu .material-icons{
+    font-size: 16px;
+    padding-top: 10px;
+    float: right;
+    padding-left: -13px;
+}
 a.btn-border:hover {
     background: #000;
     color: #fff;
@@ -9885,6 +9890,12 @@ img {
 }
 
 @media only screen and (max-width: 420px) {
+    #mainmenu .material-icons{
+        font-size: 16px;
+        padding-top: 10px;
+        float: right;
+        padding-left: 5px;
+    }
     .schedule-item .sc-name {
         float: none;
         width: 100%;
