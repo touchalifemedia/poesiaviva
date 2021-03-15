@@ -4907,9 +4907,109 @@ a.btn-right {
     font-size: 14px;
 }
 
-
+#video-compare-container {
+    display: inline-block;
+    line-height: 0;
+    position: relative;
+    width: 100%;
+    padding-top: 42.3%;
+  }
+  #video-compare-container > video {
+    width: 100%;
+    position: absolute;
+    top: 0; height: 100%;
+  }
+  #video-clipper {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    box-shadow: 3px 0px 1px white;
+}
+  #video-clipper video {
+    width: 200%;
+    postion: absolute;
+    height: 100%;
+  }
+  
 /* css attributes */
+/*
+RESPONSIVE CSS3 SLIDE CAROUSEL GALLERY
+http://stackoverflow.com/a/34696029/383904
+*/
+.mainSectionSlider{
+    position: relative;
+    max-height: 400px;
+}
+.CSSgal {
+    overflow: hidden;
+    height: 120%;
+    width: 100%;
 
+    top: 0;
+    position: absolute;
+}
+  /* SLIDER */
+  .CSSgal .slider{
+    height:      100%;
+    white-space: nowrap;
+    font-size:   0;
+    transition:  0.8s;
+  }
+  
+  /* SLIDES */
+  .CSSgal .slider > * {
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: top;
+    height: 83%;
+    width: 100%;
+    background: none 50% no-repeat;
+    background-size: cover;
+}
+  
+  /* NAVIGATION */
+  .CSSgal .bullets{
+    position:   absolute;
+    z-index:    2;
+    bottom:     0;
+    padding:    10px 0;
+    width:      100%;
+    text-align: center;
+    
+  }
+  .CSSgal .bullets > a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    line-height: 2px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(to right, #eb3349, #f45c43);
+    margin-right: 11px;
+}
+  .CSSgal .bullets > a+a{
+    background: #D6D6D6; /* Dim all but first */
+  }
+  .CSSgal .bullets > a:hover{
+    background: #848484 !important;
+  }
+  
+  /* ACTIVE NAVIGATION ANCHOR */
+  .CSSgal >s:target ~ .bullets >* { background: #D6D6D6; }
+  #s1:target ~ .bullets >*:nth-child(1){ background: linear-gradient(to right, #eb3349, #f45c43); }
+  #s2:target ~ .bullets >*:nth-child(2){ background: linear-gradient(to right, #eb3349, #f45c43); }
+  #s3:target ~ .bullets >*:nth-child(3){ background: linear-gradient(to right, #eb3349, #f45c43); }
+  #s4:target ~ .bullets >*:nth-child(4){ background: linear-gradient(to right, #eb3349, #f45c43); }
+  
+
+/* SLIDER ANIMATION POSITIONS */
+#s1:target ~ .slider{ transform: translateX(   0%); -webkit-transform: translateX(   0%); }
+#s2:target ~ .slider{ transform: translateX(-100%); -webkit-transform: translateX(-100%); }
+#s3:target ~ .slider{ transform: translateX(-200%); -webkit-transform: translateX(-200%); }
+#s4:target ~ .slider{ transform: translateX(-300%); -webkit-transform: translateX(-300%); }
 
 /* margin top */
 

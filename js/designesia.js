@@ -64,6 +64,7 @@
 	 * header | sticky
 	 * --------------------------------------------------*/
 	function header_sticky() {
+		
 		jQuery("header").addClass("clone", 1000, "easeOutBounce");
 		var $document = $(document);
 		var vscroll = 0;
@@ -202,6 +203,7 @@
 	 * plugin | enquire.js
 	 * --------------------------------------------------*/
 	function init_resize() {
+		
 		enquire.register("screen and (min-width: 993px)", {
 			match: function() {
 				jQuery('#mainmenu').show();
@@ -1167,7 +1169,7 @@
 		
 		
 		jQuery('.pf-click').click(function(){
-			
+
 			if(pf_open==1){
 			jQuery("#loader-area").slideUp(500,function(){
 				pf_open = 0;
@@ -1181,6 +1183,7 @@
 				jQuery("#loader-area").slideDown(500,function(){
 					jQuery('.page-overlay').hide();
 					pf_open = 1;
+
 					jQuery('html, body').animate({
 					scrollTop: jQuery('#loader-area').offset().top - 70
 				}, 500, 'easeOutCirc');
@@ -1205,8 +1208,18 @@
 					
 					});  
 				
-				});			
+				});	
+		new BeforeAfter({
+			id: '#one'
+		});	
+		new BeforeAfter({
+			id: '#two'
+		});
+		new BeforeAfter({
+			id: '#three'
+		});			
 		}); 
+		
 		});   
 		
 		
@@ -1365,3 +1378,4 @@ jQuery(window).on('load', function() {
 	filter_gallery();		
 	jQuery('#preloader').delay(500).fadeOut(500);
 });
+
