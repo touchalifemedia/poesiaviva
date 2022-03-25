@@ -7865,7 +7865,8 @@ section.bg-grey {
 }
 
 #back-to-top.show {
-    bottom: 90px;
+    bottom: 25px;
+    right: 135px;
     opacity: 1;
 }
 
