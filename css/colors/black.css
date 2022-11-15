@@ -227,6 +227,6 @@ a.btn-line.hover,
 }
 @media only screen and (max-width: 767px){
 .side-bg {
-    position: inherit;
+    position: inherit !important;
 }
 }
