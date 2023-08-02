@@ -1140,9 +1140,13 @@ header.header-light .logo-2 {
 }
 .post-item .date-box .d{
 	font-size:12px;
-	background:#212121;
+    background: #535353;
 }
-
+.post-item .date-box .y {
+    font-size: 12px;
+    background: #ffffff;
+    color:#000000;
+}
 .blog-list {
     margin: 0;
     padding: 0;
@@ -4008,7 +4012,8 @@ span.teaser {
 }
 
 .fa-facebook {
-    background: #3e5a9b;
+    background: #ffffff;
+    color: #000000;
 }
 
 .fa-twitter {
